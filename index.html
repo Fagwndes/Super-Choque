@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Super Choque</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;700&display=swap" rel="stylesheet">
+            <link rel="shortcut icon" href="./img/erasebg-transformed (1).png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="vd">
+        <video autoplay muted loop>
+            <source src="./img/videoplayback 1_GStory_1748480247.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+
+        <div class="ver"></div>
+    </div>
+
+    <div class="caixa">
+        <img class="logo" src="./img/erasebg-transformed (1).png">
+
+        <p>Super Choque – O Eletricista que Resolve de Verdade!</p>
+
+        <p>
+            Tomada deu faísca?
+            <br>
+            Chuveiro virou gelo?
+            <br>
+            Lâmpada piscando igual balada?
+            <br>
+        </p>
+
+        <p>
+            Calma, meu rei ! Chama o Super Choque !
+            <br>
+            Rápido no gatilho, sem enrolação e nada de gambiarra !
+        </p>
+
+        <p>
+            - Conserto de tomadas, chuveiro, disjuntor e fios soltos
+            <br>
+            - Instala tudo: ventilador, luminária, sensor, o que precisar
+            <br>
+            - Serviço caprichado, limpo e com garantia
+            <br>
+            - Atendo casa, apê, loja e até puxadinho
+            <br>
+            - Chama no zap e deixa que eu resolvo. É sem susto!
+        </p>
+
+        <button onclick="cliquei()">Fale conosco</button>
+    </div>
+
+    <div class="boneco-container">
+        <img class="boneco" src="./img/erasebg-transformed.png">
+    </div>
+
+    <form class="fale" action="https://formsubmit.co/kawanfagundes52@gmail.com" method="POST">
+        <span class="fechar" onclick="sumirformulario()">&#10005;</span>
+        <h1 class="ff">Fale conosco</h1>
+        <input placeholder="Seu nome" type="text" name="Nome">
+        <input placeholder="Seu telefone" type="tel" name="Telofone">
+        <textarea placeholder="Digite seu problema aqui" name="Info"></textarea>
+        <button onclick="sumirformulario()">Enviar formulário</button>
+    </form>
+
+<div class="mascaraa"></div>
+
+
+</body>
+
+<script>
+
+let formulario = document.querySelector(".fale")
+let mascara = document.querySelector(".mascaraa")
+
+console.log(formulario)
+
+function cliquei(){
+    formulario.style.left = "575px"
+    mascara.style.visibility = "visible"
+}
+
+function sumirformulario(){
+formulario.style.left = "-320px"
+mascara.style.visibility = "hidden"
+
+
+}
+    
+</script>
+
+</html>
